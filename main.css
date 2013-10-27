@@ -128,10 +128,24 @@
 	}
 }
 
-
+.instructions {
+	font-size: 18px;
+	font-family: Helvetica, Arial, sans-serif;
+	padding: 10PX;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	border: 1px solid #CCC;
+	width: auto;
+	background: #000;
+	margin-bottom: 10px;
+	border-radius: 0 0 10px 10px;
+	color: #EEE;
+	margin-bottom: 20px;
+}
 
 body {
-	margin: 20px auto;
+	margin: 0 auto;
 	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(100, 100, 100, 0.2)), color-stop(40%, rgba(255, 255, 255, 0.5)), color-stop(100%, #ffffff));
 	background: -webkit-linear-gradient(top, rgba(100, 100, 100, 0.2) 0%, rgba(255, 255, 255, 0.5) 40%, #ffffff 100%);
 	background: -moz-linear-gradient(top, rgba(100, 100, 100, 0.2) 0%, rgba(255, 255, 255, 0.5) 40%, #ffffff 100%);
