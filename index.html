@@ -26,42 +26,6 @@
             	</figure>
             </section>
 
-            <script type="text/javascript">
-            (function() {
-
-            	var ball = document.getElementsByClassName('ball')[0];
-            	var answer = document.getElementsByClassName('answer')[0];
-            	var answerList = ['It is certain', 'It is decidedly so', 'Without a doubt', 'Definitely', 'You may rely on it', 'As I see it, yes','Most likely', 'Outlook good', 'Yes','Signs point to yes','Reply hazy, try again', 'Better not tell you now', 'Cannot predict', 'Concentrate and ask again','Don\'t count on it','No','My sources say No', 'Outlook not so good','Very doubtful'];
-
-            	function toggleClass(el, clazz) {
-            		if(el.className.indexOf(clazz) > 0) {
-            			el.className = el.className.replace(clazz, "");
-            		} else {
-            			el.className += (" " + clazz);
-            		}
-            	};
-            	function shakeBall() {
-            		ball.className += " shake";
-            		answer.className = answer.className.replace("shown", "");
-            		answer.innerHTML = "";
-            		setTimeout(function() {
-            			ball.className = ball.className.replace(" shake", "");
-            			answer.innerHTML = getRandomArrayElement(answerList);
-            			answer.className += " shown";
-            			toggleClass(answer, "reverse");
-            		}, 1000)
-            	}
-            	
-            	function getRandomArrayElement(arr) {
-            		var rand = Math.floor((Math.random()*arr.length)+1);
-            		return arr[rand];
-            	}
-            	function bindEvents() {
-            		ball.addEventListener('click', shakeBall, false);
-            	};
-
-            	bindEvents();
-            })();
-            </script>
+            <script src='shake.js'></script>
         </body>
         </html>
