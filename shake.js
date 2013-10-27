@@ -7,7 +7,7 @@
         this.hasDeviceMotion = 'ondevicemotion' in window;
 
         //default velocity threshold for shake to register
-        this.threshold = 15;
+        this.threshold = 5;
 
         //use date to prevent multiple shakes firing
         this.lastTime = new Date();
