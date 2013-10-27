@@ -33,6 +33,7 @@
             	var ball = document.getElementsByClassName('ball')[0];
             	var answer = document.getElementsByClassName('answer')[0];
             	var answerList = ['It is certain', 'It is decidedly so', 'Without a doubt', 'Definitely', 'You may rely on it', 'As I see it, yes','Most likely', 'Outlook good', 'Yes','Signs point to yes','Reply hazy, try again', 'Better not tell you now', 'Cannot predict', 'Concentrate and ask again','Don\'t count on it','No','My sources say No', 'Outlook not so good','Very doubtful'];
+            	var clickEvent = ('touchstart' in document) ? 'touchstart' : 'click';
 
             	function toggleClass(el, clazz) {
             		if(el.className.indexOf(clazz) > 0) {
@@ -58,7 +59,7 @@
             		return arr[rand];
             	}
             	function bindEvents() {
-            		ball.addEventListener('click', shakeBall, false);
+            		ball.addEventListener(clickEvent, shakeBall, false);
             		window.addEventListener('shake', shakeBall, false);
             	};
 
