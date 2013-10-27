@@ -59,7 +59,9 @@
             	}
             	function bindEvents() {
             		ball.addEventListener('click', shakeBall, false);
-            		window.addEventListener('shake', shakeBall, false);
+            		window.addEventListener('shake', function() {
+            			alert('shaken');
+            		}, false);
             	};
 
             	bindEvents();
